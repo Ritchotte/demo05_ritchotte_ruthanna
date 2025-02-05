@@ -2,15 +2,20 @@
 <html lang="en">
 
 <head>
-    <title>My BCIT Project</title>
-    <meta name="comp1800 template" content="My 1800 App">
+    <title>Trials&Pups</title>
+    <meta name="Trails&pups" content="An app for dog owners to find dog friendly trails">
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap Library CSS CDN go here -->
+    <!-- Bootstrap Library CSS CDN go here --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Boostrap Library JS CDN  go here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
     <!-- Other libraries go here -->
 
@@ -25,8 +30,98 @@
     <!-- Your HTML Layout go here -->
     <!------------------------------>
     <!-- Stuff for body goes here -->
+<nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold fs-1" href="#">Trails & Pups</a>
+            <img src="https://img.freepik.com/premium-vector/cartoon-dog-is-standing-grass-has-blue-background-with-picture-dog_730620-715654.jpg" height="100" width="100" alt="dog">
+            </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="https://images.stockcake.com/public/3/d/b/3db545c7-c14e-49ec-8329-5926aa72fc36_large/hiking-with-dog-stockcake.jpg" alt="" width="600" height="307">
+    <h1 class="display-5 fw-bold">Find pet-friendly trails now!</h1>
+    <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Looking for a dog-friendly trail near you? Search no more! Pups & trails has you covered. Browse below our curated selection of the highest rated dog-friendly trails and hikes! What are you waiting for? Adventure awaits!</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-success btn-lg px-4 gap-3">Sign-up</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Login</button>
+        </div>
+    </div>
+</div>
 
-
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://images.pexels.com/photos/14840413/pexels-photo-14840413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Top Lake Trails</h5>
+                    <p class="card-text">Top Lake trails for you and your pup!</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://images.pexels.com/photos/18353110/pexels-photo-18353110/free-photo-of-woman-walking-dog-in-forest-in-winter.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Winter Trails</h5>
+                    <p class="card-text">Top rated dog-friendly Winter trails in 2025</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://images.pexels.com/photos/2751339/pexels-photo-2751339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Off-leash Dog Trails</h5>
+                    <p class="card-text">Top rated off-leash dog trails!</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
     <!---------------------------------------------->
     <!-- Your own JavaScript functions go here    -->
     <!---------------------------------------------->
